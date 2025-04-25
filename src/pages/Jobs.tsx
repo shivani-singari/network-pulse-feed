@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -86,7 +87,9 @@ const Jobs = () => {
         type: "Full-time",
         skills: ["Python", "Machine Learning", "SQL"],
         postedDate: "Just now",
-        saved: savedJobIds.includes("4")
+        saved: savedJobIds.includes("4"),
+        disabilitySupport: ["Cognitive Support", "Flexible Schedule"],
+        category: "Data Science"
       },
       {
         id: "5",
@@ -97,7 +100,9 @@ const Jobs = () => {
         type: "Contract",
         skills: ["Technical Documentation", "Markdown", "API Documentation"],
         postedDate: "5 days ago",
-        saved: savedJobIds.includes("5")
+        saved: savedJobIds.includes("5"),
+        disabilitySupport: ["Vision Impairment", "Remote Work"],
+        category: "Content"
       },
       {
         id: "6",
@@ -108,7 +113,9 @@ const Jobs = () => {
         type: "Full-time",
         skills: ["React Native", "iOS", "Android"],
         postedDate: "1 day ago",
-        saved: savedJobIds.includes("6")
+        saved: savedJobIds.includes("6"),
+        disabilitySupport: ["Hearing Support", "Mobility Support"],
+        category: "Technology"
       }
     ];
     
